@@ -9,6 +9,6 @@ node('linux') {
         sh "ant -f build.xml -v"
     }
     stage('Deploy') {
-         sh "aws s3 cp /workspace/java-pipeline/dist/*.jar s3://jzangs-assignment10/*.jar"
+         sh "aws s3 cp /workspace/java-pipeline/dist/*.jar s3://jzangs-assignment10/"
     }
 }
